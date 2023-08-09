@@ -24,6 +24,14 @@ module.exports = {
             }
         ]
     },
-    mode: 'development',
-    // plugins: [new HtmlWebpackPlugin()]
+    mode: 'production',
+    devServer: {
+        open: true
+    },
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    }
+    
 }
