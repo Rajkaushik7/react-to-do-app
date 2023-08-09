@@ -69,7 +69,7 @@ const Tasks = ({tasks,edit, add, remove, markAsDone}) => {
             )
         case 'view':
             return (
-                <ViewTask remove={() => handleDelete(selectedTask.current)} task={selectedTask.current} edit={() => handleEdit(selectedTask.current)} />
+                <ViewTask setActivity={setActivity} remove={() => handleDelete(selectedTask.current)} task={selectedTask.current} edit={() => handleEdit(selectedTask.current)} />
             )
     }
 }

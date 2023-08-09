@@ -3,7 +3,7 @@ import penIMG from '../../public/assets/images/pen.svg'
 import binIMG from '../../public/assets/images/bin.svg'
 import arrowIMG from '../../public/assets/images/arrow.svg'
 
-const ViewTask = ({task, remove, edit}) => {
+const ViewTask = ({task, remove, edit, setActivity}) => {
 
     return (
         <div className='view-task'>
