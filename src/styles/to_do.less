@@ -1,0 +1,163 @@
+.to-do {
+    color: #000;
+    padding: 38px 90px;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #F7F7F7;
+    height: 90vh;
+
+    .task-container {
+        .task-box {
+            .task-list {
+                margin-top: 16px;
+                .task {
+                    display: flex;
+                    justify-content: space-between;
+                    border-radius: 9px;
+                    background: #FFF;
+                    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+                    padding: 18px 50px 18px 10px;
+                    margin-bottom: 31px;
+                    .title {
+                        display: flex;
+                        align-items: center;
+                        .mark{
+                            margin-right: 7px;
+                            cursor: pointer;
+                            border: 1.5px solid #005981;
+                            width: 16px;
+                            height: 16px;
+                            background-color: white;
+                            border-radius: 50%;
+
+                            &.done {
+                                background-color: lawngreen;
+                            }
+                        }
+                    }
+                    .controls {
+                        display: flex;
+                        align-items: center;
+                        button, .delete {
+                            cursor: pointer;
+                            outline: none;
+                            padding: 5px 12px;
+                            color: white;
+                            background-color: #005981;
+                            border: none;
+                            border-radius: 27px;
+                            margin-left: 24px;
+                        }
+                        .delete {
+                            background-color: #D4A656;
+                            border-radius: 1000%;
+                            width: 34px;
+                            height: 34px;
+                            display: flex;
+                            justify-content: center;
+                            img {
+                                width:fit-content
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .add-task-container {
+        .form {
+            margin-top: 16px;
+            input, textarea {
+                padding: 33px;
+                display: block;
+                outline: none;
+                width: -webkit-fill-available;
+                color: #000;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                border-radius: 9px;
+                outline: none;
+                background: #FFF;
+                border: none;
+                box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+            }
+
+            textarea{
+                margin-top: 35px;
+                min-height: 178px;
+                margin-bottom: 36px;
+            }
+
+            .submit {
+                padding: 7px 61px;
+                color: white;
+                outline: none;
+                cursor: pointer;
+                background-color: #005981;
+                border-radius: 36px;
+                border: none;
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+    .view-task {
+        margin-top: 90px;
+        .title {
+            color: #000;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 24px;
+        }
+        .description {
+            color: #000;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 138.523%;
+            margin-bottom: 90px;
+        }
+
+        .controls {
+            display: flex;
+            .control {
+                cursor: pointer;
+                display: flex;
+                margin-right: 60px;
+                align-items: center;
+                .image-container {
+                    box-sizing: border-box;
+                    height: 34px;
+                    width: 34px;
+                    background-color: #000;
+                    border-radius: 50%;
+                    padding: 9px;
+                    margin-right: 7px;
+                    img {
+                        height:100%;
+                        width: auto;
+                    }
+                    &.edit {
+                        background-color: #005981;
+                    }
+                    &.delete {
+                        background-color: #FF0000;
+                    }
+                }
+            }
+
+        }
+    }
+}
